@@ -1,5 +1,9 @@
 # Build the site and publish to GitHub Pages.
-# In the repo: Settings → Pages → Build and deployment → Source: GitHub Actions.
+#
+# REQUIRED: Repo → Settings → Pages → Build and deployment → Source: "GitHub Actions".
+# If Source is "Deploy from a branch" (e.g. main /), GitHub serves repo-root index.html
+# with <script src="/src/main.jsx"> — that file is not on Pages → infinite "Loading…".
+# Fix: set Source to GitHub Actions only, then re-run this workflow.
 
 name: Deploy to GitHub Pages
 
@@ -50,6 +54,18 @@ jobs:
           fi
           npm run build
           cp dist/index.html dist/404.html
+
+      - name: Verify dist is a Vite production build
+        run: |
+          if grep -q '/src/main.jsx' dist/index.html; then
+            echo '::error::dist/index.html still references /src/main.jsx — build output is invalid.'
+            exit 1
+          fi
+          if ! grep -qE 'src="[^"]*assets/index-[^"]+\.js"' dist/index.html; then
+            echo '::error::dist/index.html has no hashed assets/index-*.js script tag.'
+            cat dist/index.html
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
