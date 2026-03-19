@@ -1,4 +1,4 @@
-# Jan Halas — One-page resume
+# One-page resume
 
 Minimal Scandinavian-style one-pager for resume and contact, built for **GitHub Pages**.
 
