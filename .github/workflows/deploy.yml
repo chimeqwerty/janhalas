@@ -38,9 +38,18 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
         env:
           NODE_ENV: production
+        run: |
+          OWNER="${{ github.repository_owner }}"
+          NAME="${{ github.event.repository.name }}"
+          if [ "$NAME" = "$OWNER.github.io" ]; then
+            export BASE_PATH=/
+          else
+            export BASE_PATH="/$NAME/"
+          fi
+          npm run build
+          cp dist/index.html dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
