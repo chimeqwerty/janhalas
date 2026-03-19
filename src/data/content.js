@@ -8,7 +8,7 @@ export const content = {
   intro: {
     name: 'Jan Halas',
     tagline: 'Product-minded engineer with a focus on clarity and impact.',
-    bio: 'I build things that work for people. Based in Prague, working across product, design, and code.',
+    bio: 'I build things that work for people. Based in Finland, working across product, design, and code.',
     // Put your photo in /public and set path (e.g. "/photo.jpg")
     photo: '/photo.jpg',
   },
@@ -17,7 +17,7 @@ export const content = {
   about: {
     title: 'About',
     paragraphs: [
-      'I believe in simple, honest design and code that lasts. My work sits at the intersection of product, engineering, and user experience.',
+      'I believe in simple, honest design and code that lasts. My work sits at the intersection of product, engineering, and user experience, impacting millions of users.',
       'When I’m not shipping, I’m usually reading, walking, or tinkering with side projects.',
     ],
   },
