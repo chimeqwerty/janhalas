@@ -60,7 +60,7 @@ export const content = {
     education: {
       title: 'Education',
       items: [
-        { degree: 'Masters in Science (Data Science)', institution: 'LUT University', period: '2017 – 2020', note: 'Awarded achieving student of the year designation. Studies focused on Math, Fuzzy Logic, Data Science, Algorithms, ML/AI, Programming, Econometrics.', logo: '/logos/lut.png' },
+        { degree: 'Masters in Science (Data Science)', institution: 'LUT University', period: '2017 – 2020', note: "Studies focused on Math, Fuzzy Logic, Data Science, Algorithms, ML/AI, Programming, Econometrics. Awarded ''Achieving Student of the year'' designation', logo: '/logos/lut.png' },
         { degree: 'Bachelor of Engineering (Industrial Management)', institution: 'Helsinki Metropolia University of Applied Sciences', period: '2012 – 2016', logo: '/logos/metropolia.jpg' },
         { degree: 'International Exchange Studies', institution: 'HTW Berlin', period: '2015', logo: '/logos/htw.svg' },
       ],
