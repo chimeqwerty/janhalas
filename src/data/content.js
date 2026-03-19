@@ -85,7 +85,7 @@ export const content = {
     },
     techStack: {
       title: 'Tech stack',
-      items: ['Python', 'Ruby', 'Java', 'Git', 'Web Applications & APIs', 'Data Engineering', 'Algorithm Design', 'Scripting'],
+      items: ['Python, Javascript', 'Observability - Graphana, Datadog', 'Git', 'Web Applications & API design', 'AI tooling', 'Data Engineering', 'Algorithm Design', 'Scripting'],
     },
   },
 
@@ -93,14 +93,14 @@ export const content = {
   contact: {
     title: 'Contact',
     text: 'Open to interesting projects and conversations. Reach out via email or LinkedIn.',
-    email: 'jan@example.com',
-    linkedin: 'https://linkedin.com/in/janhalas',
-    github: 'https://github.com/janhalas',
+    email: 'janhalas@outlook.com',
+    linkedin: 'https://www.linkedin.com/in/jan-halas-3228608a/',
+    github: 'https://github.com/chimeqwerty',
     // Add or remove links as needed
     links: [
-      { label: 'Email', href: 'mailto:jan@example.com' },
-      { label: 'LinkedIn', href: 'https://linkedin.com/in/janhalas' },
-      { label: 'GitHub', href: 'https://github.com/janhalas' },
+      { label: 'Email', href: 'mailto:janhalas@outlook.com' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jan-halas-3228608a/' },
+      { label: 'GitHub', href: 'https://github.com/chimeqwerty' },
     ],
   },
 }
