@@ -17,7 +17,7 @@ export const content = {
   about: {
     title: 'About',
     paragraphs: [
-      'I believe in simple, honest design and code that lasts. My work sits at the intersection of product, engineering, and user experience, impacting millions of users.',
+      'I believe in simple, yet meanigful and impactful products. Always seeking new value of bringing value and sharing my knowledge to make this Earth a better place. My superpowers are at the intersection of product, engineering, and user experience, having opportunity to impact millions of people daily.',
       'When I’m not shipping, I’m usually reading, walking, or tinkering with side projects.',
     ],
   },
